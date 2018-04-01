@@ -1,0 +1,126 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #555
+	opacity: 1
+
+*:-moz-placeholder
+	color: #555
+	opacity: 1
+
+*::-moz-placeholder
+	color: #555
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #555
+	opacity: 1
+.row
+	margin: 0
+	padding: 0
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #555
+body input:required:valid,
+body textarea:required:valid
+	color: #555
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	color: #555
+	// min-width: 750px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	// overflow-x: hidden
+
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $main-color
+	color: #fff
+section.header
+	margin-top: 30px
+
+.headertext
+	font-size: 24pt
+	font-weight: 100
+	text-align: center
+
+
+.headtext
+	text-align: center
+.bluebtn
+	background-color: $main-color
+	color: #fff
+	font-size: 18px
+	padding: 5px 30px
+	margin-top: 10px
+	margin-bottom: 30px
+	transition: .2s
+.bluebtn:hover
+	transform: scale(1.1)
+
+.contactblock
+	margin-top: 10px
+	font-size: 18px
+.logoblock
+	text-align: center
+	margin-top: 30px
+	background-color: #fff
+.contactblock
+	text-align: center
+	font-size: 18px
+section.navigation
+	background-color: $main-color
+li.ni
+	padding: 10px 18px
+	transition: .2s
+a.ni
+	color: #fff
+
+li.ni:hover
+		transform: scale(1.1)
+.navbar-dark .navbar-nav .nav-link
+	color: #fff
+	transition: ease .3s	
+
+.navbar-dark .navbar-nav .nav-link:hover
+	color: #fff
+.navbar-dark .navbar-toggler
+	font-size: 24px
+.social-top
+	margin-top: 35px
+	font-size: 30px
+.social-top>i
+	color: $main-color
+	margin-left: 15px
+	transition: ease 0.2s
+.social-top>i:hover
+	-webkit-transform: scale(1.2)
+  	-ms-transform: scale(1.2)
+  	transform: scale(1.2)
+.diracc
+	margin-top: 45px
+	font-size: 20px
+.rb
+	text-align: right
+
+
+@import "media" 
