@@ -55,6 +55,7 @@ body
 ::selection
 	background-color: $main-color
 	color: #fff
+
 section.header
 	margin-top: 30px
 
@@ -75,6 +76,29 @@ section.header
 	margin-bottom: 30px
 	transition: .1s
 	box-shadow: 3px 3px 5px rgba(0,0,0,0.5)
+	&-big
+		background-color: $main-color
+		color: #fff
+		font-size: 24px
+		padding: 7px 40px
+		margin-top: 10px
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.5)
+		&:hover
+			background-color: lighten($main-color, 10%)
+		&:focus
+			background-color: darken($main-color, 10%)
+	&-huge
+		background-color: $main-color
+		color: #fff
+		font-size: 24px
+		padding: 10px 180px
+		margin: 40px
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.5)
+		&:hover
+			background-color: lighten($main-color, 10%)
+		&:focus
+			background-color: darken($main-color, 10%)		
+
 .bluebtn:hover
 	background-color: lighten($main-color, 10%)
 .bluebtn:focus
@@ -122,10 +146,9 @@ li.ni:hover
   	-ms-transform: scale(1.2)
   	transform: scale(1.2)
 section.bigbuttons
-	margin-top: 15px
+	margin-top: 50px
 	padding-top: 40px
-	margin-bottom: 20px
-	background-image: url(../img/sunset.jpg)
+	background-image: url(http://placehold.it/1920x140)
 	background-size: 100%
 	background-position: 0 0
 .diracc
@@ -133,6 +156,9 @@ section.bigbuttons
 	font-size: 20px
 .rb
 	text-align: right
+
+section.types
+	margin-top: 50px
 .typepic
 	margin-bottom: 20px
 
@@ -226,5 +252,11 @@ section.bigbuttons
   filter: alpha(opacity=100)
   -webkit-transform: translate3d(0,0,0)
   transform: translate3d(0,0,0)
+section.ourtransport
+	margin-top: 30px
+	background-image: url(http://placehold.it/1920x140)
+	text-align: center
+section.advantages
+	margin-top: 17px
 
 @import "media" 
