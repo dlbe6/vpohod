@@ -2,6 +2,7 @@
 @import "libs"
 @import "vars"
 
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -38,7 +39,8 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-
+h2
+	font-size: 24px !important
 body
 	font-size: 18px
 	color: #555
@@ -147,7 +149,8 @@ li.ni:hover
   	transform: scale(1.2)
 section.bigbuttons
 	margin-top: 50px
-	padding-top: 40px
+	padding-top: 25px
+	height: 125px
 	background-image: url(http://placehold.it/1920x140)
 	background-size: 100%
 	background-position: 0 0
@@ -206,19 +209,19 @@ section.types
   transform: translate3d(0,0,0)
 
 
-.hovereffect h2 
+.hovereffect h3 
   text-transform: uppercase
   color: #fff
   text-align: center
   position: relative
-  font-size: 16px
+  font-size: 15px
   overflow: hidden
   padding: 0.5em 0
   background-color: rgba(51,153,204,.8) !important
 	
 
 
-.hovereffect h2:after 
+.hovereffect h3:after 
   position: absolute
   bottom: 0
   left: 0
@@ -232,7 +235,7 @@ section.types
   transform: translate3d(-100%,0,0)
 
 
-.hovereffect:hover h2:after 
+.hovereffect:hover h3:after 
   -webkit-transform: translate3d(0,0,0)
   transform: translate3d(0,0,0)
 
@@ -258,5 +261,9 @@ section.ourtransport
 	text-align: center
 section.advantages
 	margin-top: 17px
-
+.adv-item
+	margin-bottom: 50px
+	box-shadow: 30px 25px 39px rgba(0, 0, 0, 0.1)
+.adv-item:last-child
+	margin-bottom: 0
 @import "media" 
