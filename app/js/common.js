@@ -1,5 +1,36 @@
 $(function() {
 
-	// Custom JS
-
+$(document).ready(function(){
+  $("#reviews").owlCarousel({
+  	video:true,
+    loop:true,
+  	lazyLoad:true,
+    center:true,
+    nav:true,
+    autoWidth:true,
+    margin:30,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2,
+            margin:10
+        },
+        1000:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+  });
+});
+  $("#related").owlCarousel({
+    items:4,
+    margin:10,
+    nav:true,
+    dots:true,
+    loop:true
+  });
 });
